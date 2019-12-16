@@ -1,10 +1,11 @@
 import React from 'react'
 
-function MainContent() {
-  return (
-    <main>
-      <h4>I'm the Body</h4>
-    </main>
+function MainContent(){
+  
+  const firstName = "Vishwas"
+  const LastName = "C"
+  return(
+    <h1>Hello {`${firstName} ${LastName}`}</h1>
   )
 }
 
