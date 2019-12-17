@@ -4,18 +4,19 @@ function MainContent(){
   const date = new Date()
   const hours = date.getHours()
   let timeOfDay
-
-  if(hours < 12) {
-    timeOfDay = 'Morning'
-  }
-  else {
-    timeOfDay = 'Night'
-  }
   const styleval ={
-    color: 'turquoise', 
     fontSize: 40,
     backgroundColor: 'purple'
   }
+  if(hours < 12) {
+    timeOfDay = 'Morning'
+    styleval.color = 'yellow'
+  }
+  else {
+    timeOfDay = 'Night'
+    styleval.color = 'gray'
+  }
+  
   return(
     <h1 style={styleval}>Good {timeOfDay}</h1>
   )
