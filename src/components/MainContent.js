@@ -2,9 +2,18 @@ import React from 'react'
 
 function MainContent(){
   const date = new Date()
+  const hours = date.getHours()
+  let timeOfDay
+
+  if(hours < 12) {
+    timeOfDay = 'Morning'
+  }
+  else {
+    timeOfDay = 'Night'
+  }
 
   return(
-  <h1>It is currently {date.getHours()%12} O'clock</h1>
+<h1>Good {timeOfDay}</h1>
   )
 }
 
