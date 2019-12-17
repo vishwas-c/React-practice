@@ -4,7 +4,7 @@ import React from 'react'
 function Navbar() {
   return (
     <header>
-      <h4>I'm the Navbar</h4>
+      <h4>Time Check</h4>
     </header>
   )
 }
