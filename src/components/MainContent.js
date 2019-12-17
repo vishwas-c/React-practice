@@ -11,9 +11,13 @@ function MainContent(){
   else {
     timeOfDay = 'Night'
   }
-
+  const styleval ={
+    color: 'turquoise', 
+    fontSize: 40,
+    backgroundColor: 'purple'
+  }
   return(
-<h1>Good {timeOfDay}</h1>
+    <h1 style={styleval}>Good {timeOfDay}</h1>
   )
 }
 
