@@ -5,7 +5,8 @@ class ConditionalApp extends Component {
   constructor() {
     super()
     this.state = {
-       isLoading: true
+       isLoading: true,
+       unreadMsg: ['a','b','c']
     }
   }
   componentDidMount(){
@@ -19,6 +20,8 @@ class ConditionalApp extends Component {
     return (
       <div>
         {this.state.isLoading ? <h1>Loading...</h1>: <Conditional /> }
+        {/* && checks first if true then displays 2nd by default */}
+        {this.state.unreadMsg.length > 0 && <h2>You have {this.state.unreadMsg.length} Unread Messages</h2>}
       </div>
     )
   }
